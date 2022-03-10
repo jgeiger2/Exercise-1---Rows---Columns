@@ -1,0 +1,32 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px;
+    gap: 10px;
+}
+
+.a {
+    background-color: aqua;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+
+}
+
+.b, .c {
+    background-color: blue;
+}
+
+.d {
+    background-color: bisque;
+    grid-column: 3 / span 2;
+}
+
+.e, .f, .h, .i {
+    background-color: blueviolet;
+}
+
+.g {
+    background-color: firebrick;
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 2;
+}
